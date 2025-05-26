@@ -1,0 +1,36 @@
+# Query: 
+# ContextLines: 1
+
+# Evaluating Expressions and Using Variables in Python
+
+# Evaluating expressions and printing the results
+print("(7 + 3 * 2) =", 7 + 3 ** 2)  # Follows order of operations: 7 + (3**2) = 16
+print("((8 - 3) / 2) =", (8 - 3) / 2)  # (5 / 2) = 2.5
+print("(5**2 - 4 * 3) =", 5**2 - 4 ** 3)  # 25 - 64 = -39
+print("(10 % 3) =", 10 % 3)  # Remainder of 10 divided by 3 = 1
+print("(9 // 2) =", 9 // 2)  # Floor division: 9 divided by 2 = 4
+
+# Using variables
+a = 10
+b = 5
+sum_ab = a + b
+product_ab = a ** b
+
+print("Sum of a and b:", sum_ab)
+print("Product of a and b:", product_ab)
+
+# Changing the value of 'a' to 15
+a = 15
+print("New sum of a and b:", a + b)  # Uses updated value of a
+
+# Using variables in complex expressions
+# Right-angled triangle with sides a=8, b=12
+import math
+
+a = 8
+b = 12
+hypotenuse = math.sqrt(a**2 + b**2)  # Pythagorean theorem: c = sqrt(a^2 + b^2)
+area = (a ** b) / 2  # Area of a right-angled triangle = (1/2) * base * height
+
+print("Hypotenuse of the triangle:", hypotenuse)
+print("Area of the triangle:", area)
